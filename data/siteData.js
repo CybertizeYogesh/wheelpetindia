@@ -16,41 +16,41 @@ export const SITE = {
 };
 
 export const assets = {
-  logo: "/uploads/2025/01/Screenshot-2025-01-17-170229.png",
-  hero: "/uploads/2025/11/image-48.jpg",
-  about: "/uploads/2025/11/image-52.jpg",
-  why: "/uploads/2025/11/image-53.jpg",
-  cta: "/uploads/2025/01/deliveryman-in-uniform-holds-parcel-and-phone-GMNT8LD-4.png",
-  map: "/uploads/2025/01/world-map-KAKTEK5-4-1024x581.png",
-  arrow: "/uploads/2025/01/arrow-moverie.png",
+  logo: "/uploads/2025/01/Screenshot-2025-01-17-170229.webp",
+  hero: "/uploads/2025/11/image-48.webp",
+  about: "/uploads/2025/11/image-52.webp",
+  why: "/uploads/2025/11/image-53.webp",
+  cta: "/uploads/2025/01/deliveryman-in-uniform-holds-parcel-and-phone-GMNT8LD-4.webp",
+  map: "/uploads/2025/01/world-map-KAKTEK5-4-1024x581.webp",
+  arrow: "/uploads/2025/01/arrow-moverie.webp",
   box: "/uploads/2025/02/A-big-box-1024x1024.webp",
   featureIcons: [
-    "/uploads/2025/02/cargo-truck-2.png",
-    "/uploads/2025/02/notes-1-1.png",
-    "/uploads/2025/02/three-o-clock-clock.png",
-    "/uploads/2025/02/copy.png"
+    "/uploads/2025/02/cargo-truck-2.webp",
+    "/uploads/2025/02/notes-1-1.webp",
+    "/uploads/2025/02/three-o-clock-clock.webp",
+    "/uploads/2025/02/copy.webp"
   ],
   partners: [
-    "/uploads/2025/01/GDB9KJ.png",
-    "/uploads/2025/01/MQTL8L.png",
-    "/uploads/2025/01/PEYRAY.png",
-    "/uploads/2025/01/HPHBLHQ.png",
-    "/uploads/2025/01/5Z6DUAR.png"
+    "/uploads/2025/01/GDB9KJ.webp",
+    "/uploads/2025/01/MQTL8L.webp",
+    "/uploads/2025/01/PEYRAY.webp",
+    "/uploads/2025/01/HPHBLHQ.webp",
+    "/uploads/2025/01/5Z6DUAR.webp"
   ],
   gallery: [
-    "/uploads/2025/01/moving-in-new-house.jpg",
-    "/uploads/2025/01/couple-unloading-truck.jpg",
-    "/uploads/2025/01/business-lady-asking-mover-about-delivery-order.jpg",
-    "/uploads/2025/01/courier-working-with-parcels-in-warehouse.jpg",
-    "/uploads/2025/01/happy-delivery-man-with-cardboard-boxes-on-cart.jpg",
-    "/uploads/2025/03/imgpsh_fullsize_anim-6.jpg",
-    "/uploads/2025/03/imgpsh_fullsize_anim-7.jpg",
-    "/uploads/2025/04/a299db33-9fa6-4265-9d24-c6ee050fc741.jpg"
+    "/uploads/2025/01/moving-in-new-house.webp",
+    "/uploads/2025/01/couple-unloading-truck.webp",
+    "/uploads/2025/01/business-lady-asking-mover-about-delivery-order.webp",
+    "/uploads/2025/01/courier-working-with-parcels-in-warehouse.webp",
+    "/uploads/2025/01/happy-delivery-man-with-cardboard-boxes-on-cart.webp",
+    "/uploads/2025/03/imgpsh_fullsize_anim-6.webp",
+    "/uploads/2025/03/imgpsh_fullsize_anim-7.webp",
+    "/uploads/2025/04/a299db33-9fa6-4265-9d24-c6ee050fc741.webp"
   ],
   team: [
-    "/uploads/2025/01/elderly-cargo-man-in-uniform-poses-in-home-office-6XAG2PS.png",
-    "/uploads/2025/01/deliveryman-with-carton-box-at-the-car-delivery-8W4L4MW.png",
-    "/uploads/2025/01/content-bearded-mover-delivering-boxes-UP2AG4B.png"
+    "/uploads/2025/01/elderly-cargo-man-in-uniform-poses-in-home-office-6XAG2PS.webp",
+    "/uploads/2025/01/deliveryman-with-carton-box-at-the-car-delivery-8W4L4MW.webp",
+    "/uploads/2025/01/content-bearded-mover-delivering-boxes-UP2AG4B.webp"
   ]
 };
 
@@ -66,7 +66,7 @@ export const services = [
     slug: "domestic-moving",
     title: "Domestic Moving",
     short: "Securely packed and safely transported, your home is our priority!",
-    image: "/uploads/2025/11/image-56-scaled.jpg",
+    image: "/uploads/2025/11/image-56-scaled.webp",
     icon: "FaHome",
     intro: "Domestic moving with Sharma Packers & Movers keeps household shifting calm, organized, and carefully managed from survey to final placement.",
     detail: [
@@ -81,7 +81,7 @@ export const services = [
     slug: "corporate-shifting",
     title: "Corporate Shifting",
     short: "Seamless transitions for your business, with care for every detail!",
-    image: "/uploads/2025/11/image-44.jpg",
+    image: "/uploads/2025/11/image-44.webp",
     icon: "FaBuilding",
     intro: "Corporate shifting is handled with schedules, checklists, department-wise packing, and minimum disruption to daily operations.",
     detail: [
@@ -96,7 +96,7 @@ export const services = [
     slug: "transportation-solution",
     title: "Transportation Solution",
     short: "Timely and safe delivery, tailored to your needs!",
-    image: "/uploads/2025/11/image-55.jpg",
+    image: "/uploads/2025/11/image-55.webp",
     icon: "FaTruckMoving",
     intro: "Transportation solutions cover reliable movement of household, commercial, industrial, and personal consignments across India.",
     detail: [
@@ -111,7 +111,7 @@ export const services = [
     slug: "storage-and-warehouse",
     title: "Storage and Warehouse",
     short: "Secure, flexible solutions for all your storage needs!",
-    image: "/uploads/2025/11/image-54-scaled.jpg",
+    image: "/uploads/2025/11/image-54-scaled.webp",
     icon: "FaWarehouse",
     intro: "Storage and warehouse services provide safe space for household goods, office material, documents, and commercial items.",
     detail: [
@@ -156,7 +156,7 @@ export const services = [
     slug: "car-transportation",
     title: "Car Transportation",
     short: "Secure vehicle carriers and careful handling for city-to-city car movement.",
-    image: "/uploads/2025/11/image-42.jpg",
+    image: "/uploads/2025/11/image-42.webp",
     icon: "FaCar",
     intro: "Car transportation is carried out with pre-move inspection, careful loading, carrier movement, and destination handover.",
     detail: [
@@ -171,7 +171,7 @@ export const services = [
     slug: "bike-transportation",
     title: "Bike Transportation",
     short: "Safe transport for your bikes arriving in pristine condition!",
-    image: "/uploads/2025/11/image-41.jpg",
+    image: "/uploads/2025/11/image-41.webp",
     icon: "FaMotorcycle",
     intro: "Bike transportation includes fuel guidance, protective wrapping, safe loading, and city-to-city delivery.",
     detail: [
@@ -186,7 +186,7 @@ export const services = [
     slug: "loading-unloading",
     title: "Loading / Unloading",
     short: "Trained manpower for careful lifting, stacking, and placement.",
-    image: "/uploads/2025/01/couple-unloading-truck.jpg",
+    image: "/uploads/2025/01/couple-unloading-truck.webp",
     icon: "FaPeopleCarry",
     intro: "Loading and unloading support keeps heavy and fragile goods moving safely between home, vehicle, warehouse, and destination.",
     detail: [
@@ -201,7 +201,7 @@ export const services = [
     slug: "office-relocation",
     title: "Office Relocation",
     short: "Structured office moves with minimal downtime and careful asset handling.",
-    image: "/uploads/2025/01/business-lady-asking-mover-about-delivery-order.jpg",
+    image: "/uploads/2025/01/business-lady-asking-mover-about-delivery-order.webp",
     icon: "FaBriefcase",
     intro: "Office relocation supports small offices, branches, shops, and corporate teams with planned packing and shifting.",
     detail: [
@@ -216,7 +216,7 @@ export const services = [
     slug: "house-shifting",
     title: "House Shifting",
     short: "Complete home relocation support from packing to final delivery.",
-    image: "/uploads/2025/01/moving-in-new-house.jpg",
+    image: "/uploads/2025/01/moving-in-new-house.webp",
     icon: "FaHouseUser",
     intro: "House shifting brings packing, loading, transport, unloading, and unpacking support into one organized relocation service.",
     detail: [
@@ -232,22 +232,22 @@ export const services = [
 export const testimonials = [
   {
     name: "Ravi Prakash Singh",
-    avatar: "/uploads/2025/01/P2UGM57.jpg",
+    avatar: "/uploads/2025/01/P2UGM57.webp",
     text: "I recently hired SHARMA Packers & Movers for my relocation, and I couldn't be happier. The team was professional, efficient, and took great care of my belongings."
   },
   {
     name: "Neha Gupta",
-    avatar: "/uploads/2025/01/RHDZL5A.jpg",
+    avatar: "/uploads/2025/01/RHDZL5A.webp",
     text: "Moving can be stressful, but SHARMA made it a breeze. Their customer service was outstanding, and the packing and loading process was seamless."
   },
   {
     name: "Rahul Devendra Mehta",
-    avatar: "/uploads/2025/01/PYTF4B7.jpg",
+    avatar: "/uploads/2025/01/PYTF4B7.webp",
     text: "I was impressed by the level of care and attention to detail. They handled my antique furniture with professionalism and delivered everything safely."
   },
   {
     name: "Pooja Desai",
-    avatar: "/uploads/2025/01/E3CC8GB.jpg",
+    avatar: "/uploads/2025/01/E3CC8GB.webp",
     text: "From the initial booking to final delivery, the entire process was smooth and hassle-free. The team was friendly and worked efficiently."
   }
 ];
@@ -277,7 +277,7 @@ export const blogPosts = [
     title: "Sharma Packers Bikaner: Affordable Trusted Moving Services",
     category: "Uncategorized",
     date: "March 26, 2025",
-    image: "/uploads/2025/03/imgpsh_fullsize_anim-7.jpg",
+    image: "/uploads/2025/03/imgpsh_fullsize_anim-7.webp",
     excerpt: "Affordable relocation becomes easier when packing, loading, transport, and delivery are handled by a disciplined local moving team.",
     content: [
       "Transferring your place or office can be a major experience at any time. A trusted packing team can reduce stress with careful planning and transparent work.",
@@ -290,7 +290,7 @@ export const blogPosts = [
     title: "Step-by-Step Guide to Moving with Packers and Movers in Bikaner",
     category: "Uncategorized",
     date: "March 27, 2025",
-    image: "/uploads/2025/03/imgpsh_fullsize_anim-6.jpg",
+    image: "/uploads/2025/03/imgpsh_fullsize_anim-6.webp",
     excerpt: "This step-by-step procedure offers key tips for a hassle-free relocation with packers and movers in Bikaner.",
     content: [
       "Start by listing your items and deciding what should be moved, donated, stored, or packed separately.",
@@ -303,7 +303,7 @@ export const blogPosts = [
     title: "Sharma Packers and Movers: Secure and Reliable Services",
     category: "Uncategorized",
     date: "April 5, 2025",
-    image: "/uploads/2025/04/a299db33-9fa6-4265-9d24-c6ee050fc741.jpg",
+    image: "/uploads/2025/04/a299db33-9fa6-4265-9d24-c6ee050fc741.webp",
     excerpt: "Secure and reliable relocation depends on experienced planning, trained manpower, quality packing, and careful transportation.",
     content: [
       "Sharma Packers & Movers focuses on safe packing, careful handling, and dependable delivery for families and businesses.",

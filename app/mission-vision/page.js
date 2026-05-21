@@ -21,14 +21,14 @@ export default function MissionVisionPage() {
             <p>Our goal is to provide items and logistics to our customers in a hassle-free and well-focused manner. We always provide our best and reassure clients that they can trust us completely.</p>
           </div>
           <div className={styles.articleImage} style={{ margin: 0 }}>
-            <Image src="/uploads/2025/01/female-entrepreneur-talking-to-movers-in-new-restaurant.jpg" alt="Our mission" width={680} height={420} />
+            <Image src="/uploads/2025/01/female-entrepreneur-talking-to-movers-in-new-restaurant.webp" alt="Our mission" width={680} height={420} />
           </div>
         </div>
       </section>
       <section className="section" style={{ background: "var(--color-light)" }}>
         <div className={`container ${styles.twoCol}`}>
           <div className={styles.articleImage} style={{ margin: 0 }}>
-            <Image src="/uploads/2025/01/young-mover-with-packaged-product.jpg" alt="Our vision" width={680} height={420} />
+            <Image src="/uploads/2025/01/young-mover-with-packaged-product.webp" alt="Our vision" width={680} height={420} />
           </div>
           <div className={styles.article}>
             <p className="eyebrow">Our Vision</p>

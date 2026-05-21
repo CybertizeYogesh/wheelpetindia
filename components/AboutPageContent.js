@@ -15,7 +15,7 @@ export default function AboutPageContent() {
       <section className="section">
         <div className={`container ${styles.twoCol}`}>
           <div className={styles.imageStack}>
-            <Image src="/uploads/2025/11/image-65.jpg" alt="Sharma Packers moving service" width={650} height={820} />
+            <Image src="/uploads/2025/11/image-65.webp" alt="Sharma Packers moving service" width={650} height={820} />
             <Image src={assets.about} alt="Moving service worker" width={460} height={560} />
             <div className={styles.factBadge}><span><strong>18</strong>Years of Experience</span></div>
           </div>

@@ -1,0 +1,16 @@
+:root {
+  --color-primary: #fc0000;
+  --color-secondary: #182937;
+  --color-text: #5e5e5e;
+  --color-accent: #12365d;
+  --color-white: #ffffff;
+  --color-light: #f7f7f7;
+  --color-border: #eaeaea;
+  --color-muted: #f2f4f6;
+  --font-body: "Roboto", Arial, sans-serif;
+  --container: 1140px;
+  --container-wide: 1290px;
+  --shadow-soft: 0 0 10px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 10px 30px rgba(24, 41, 55, 0.13);
+  --transition: 260ms ease;
+}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaBoxOpen, FaClock, FaHeadset, FaShieldAlt } from "react-icons/fa";
+import { FaBoxOpen, FaClock, FaHeadset, FaShieldAlt, FaCheckCircle } from "react-icons/fa";
 import BlogGrid from "@/components/BlogGrid";
 import BookNowStrip from "@/components/BookNowStrip";
 import BranchLocations from "@/components/BranchLocations";
@@ -151,14 +151,32 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="sectionTight">
-        <div className="container" style={{ textAlign: "center" }}>
-          <FaBoxOpen size={42} color="var(--color-primary)" />
-          <p className="eyebrow" style={{ marginTop: 14 }}>Need A Quote?</p>
-          <h2 className="sectionTitle">Car & Pet Relocation Made Simple</h2>
-          <p className="sectionText">Book the best car delivery service and dog shipping experts for your next transfer.</p>
-          <div style={{ marginTop: 25 }}>
-            <Link className="btn" href="/contact-us/">Contact Us</Link>
+      <section className="section">
+        <div className="container">
+          <div className={styles.quoteBannerCard}>
+            <div className={styles.icon}>
+              <FaBoxOpen />
+            </div>
+            <p className="eyebrow" style={{ color: "var(--color-secondary)", margin: 0 }}>Need A Quote?</p>
+            <h2>Car & Pet Relocation Made Simple</h2>
+            <p>Book the best car delivery service and dog shipping experts for your next transfer.</p>
+            
+            <div className={styles.trustPointsGrid}>
+              {[
+                "IATA-Approved Pet Crates",
+                "GPS-Tracked Car Trailers",
+                "100% Insured Shifting"
+              ].map((text) => (
+                <div className={styles.trustPointItem} key={text}>
+                  <FaCheckCircle />
+                  <span>{text}</span>
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <Link className="btn btnSecondary" href="/contact-us/">Contact Us</Link>
+            </div>
           </div>
         </div>
       </section>

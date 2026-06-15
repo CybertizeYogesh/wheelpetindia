@@ -107,33 +107,39 @@ main {
   gap: 8px;
   min-height: 48px;
   max-width: 100%;
-  padding: 15px clamp(18px, 2.1vw, 25px);
+  padding: 14px clamp(24px, 2.5vw, 32px);
   border: 0;
-  border-radius: 0;
+  border-radius: 12px;
   background: var(--color-primary);
   color: #ffffff;
   font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   line-height: 1;
   text-transform: uppercase;
-  transition: background var(--transition), color var(--transition), transform var(--transition);
+  transition: all var(--transition);
+  box-shadow: 0 4px 12px rgba(13, 43, 69, 0.15);
 }
 
 .btn:hover,
 .btn:focus-visible {
   background: var(--color-secondary);
-  color: #ffffff;
+  color: var(--color-primary);
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 219, 242, 0.3);
 }
 
 .btnSecondary {
   background: var(--color-secondary);
+  color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(15, 219, 242, 0.2);
 }
 
 .btnSecondary:hover,
 .btnSecondary:focus-visible {
   background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(13, 43, 69, 0.35);
 }
 
 .swiper-pagination-bullet {

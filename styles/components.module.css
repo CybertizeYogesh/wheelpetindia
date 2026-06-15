@@ -190,12 +190,16 @@
   justify-content: center;
   background: var(--color-primary);
   color: #ffffff;
-  transition: background var(--transition), transform var(--transition);
+  border-radius: 12px;
+  transition: all var(--transition);
+  box-shadow: 0 4px 10px rgba(13, 43, 69, 0.15);
 }
 
 .iconButton:hover {
   background: var(--color-secondary);
+  color: var(--color-primary);
   transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(15, 219, 242, 0.3);
 }
 
 .hamburger {

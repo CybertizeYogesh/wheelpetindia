@@ -1,23 +1,44 @@
-import Image from "next/image";
-import { featureStrip } from "@/data/siteData";
-import QuoteForm from "@/components/QuoteForm";
+import { FaPaw, FaRoute, FaShieldAlt, FaUserCheck } from "react-icons/fa";
 import styles from "@/styles/sections.module.css";
 
 export default function BookNowStrip() {
+  const features = [
+    {
+      title: "Climate-Controlled Cabins",
+      desc: "AC vehicles for comfortable dog shipping & pet transport.",
+      Icon: FaPaw,
+    },
+    {
+      title: "GPS-Tracked Carriers",
+      desc: "Real-time updates for your car courier service.",
+      Icon: FaRoute,
+    },
+    {
+      title: "Full Transit Coverage",
+      desc: "Comprehensive protection by a top car shipping company.",
+      Icon: FaShieldAlt,
+    },
+    {
+      title: "Trained Pet Handlers",
+      desc: "Dedicated travel support from our animal travel agency.",
+      Icon: FaUserCheck,
+    },
+  ];
+
   return (
     <section className={styles.bookNow}>
-      <div className={`containerWide ${styles.bookWrap}`}>
-        <div className={styles.bookForm}>
-          <QuoteForm compact />
-        </div>
-        <div className={styles.bookFeatures}>
-          {featureStrip.map((item) => (
-            <div className={styles.bookFeature} key={item.title}>
-              <Image src={item.icon} alt="" width={32} height={32} />
-              <h5>{item.title}</h5>
+      <div className={`containerWide ${styles.bookWrapNew}`}>
+        {features.map((item) => (
+          <div className={styles.bookFeatureNew} key={item.title}>
+            <div className={styles.featureIconWrap}>
+              <item.Icon size={22} />
             </div>
-          ))}
-        </div>
+            <div className={styles.featureTextWrap}>
+              <h5>{item.title}</h5>
+              <p>{item.desc}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

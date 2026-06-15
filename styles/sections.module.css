@@ -213,93 +213,149 @@
 
 .imageStack {
   position: relative;
-  min-height: clamp(430px, 42vw, 530px);
+  min-height: clamp(450px, 45vw, 550px);
   min-width: 0;
+  display: flex;
+  align-items: flex-start;
 }
 
 .imageStack img {
-  width: 74%;
+  width: 76%;
   height: auto;
   aspect-ratio: 0.78;
   object-fit: cover;
+  border-radius: 24px;
   box-shadow: var(--shadow-card);
+  transition: transform 0.4s ease;
+}
+
+.imageStack img:hover {
+  transform: scale(1.02);
 }
 
 .imageStack img:nth-child(2) {
   position: absolute;
   right: 0;
-  bottom: 0;
-  width: 48%;
+  bottom: 10px;
+  width: 50%;
   height: auto;
   aspect-ratio: 0.86;
-  border: 12px solid #ffffff;
+  border: 8px solid #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.imageStack img:nth-child(2):hover {
+  transform: scale(1.05) translateY(-5px);
 }
 
 .factBadge {
   position: absolute;
-  left: 28px;
-  bottom: 36px;
-  width: clamp(118px, 12vw, 150px);
-  height: clamp(118px, 12vw, 150px);
-  display: grid;
-  place-items: center;
+  left: -15px;
+  bottom: 40px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: var(--color-primary);
   color: #ffffff;
   text-align: center;
-  box-shadow: var(--shadow-card);
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(13, 43, 69, 0.25);
+  z-index: 3;
+  padding: 10px;
+  transition: all 0.4s ease;
+}
+
+.factBadge:hover {
+  transform: scale(1.1) rotate(-8deg);
+  border-color: var(--color-secondary);
 }
 
 .factBadge strong {
   display: block;
-  font-size: clamp(38px, 4vw, 55px);
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--color-secondary);
   line-height: 1;
+  margin-bottom: 2px;
 }
 
 .factBadge span {
   display: block;
-  font-size: 14px;
-  line-height: 1.25;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #cbd5e1;
 }
 
 .miniGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: clamp(14px, 2vw, 20px);
-  margin-top: 28px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
 }
 
 .miniCard {
-  padding: 20px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
   text-align: center;
-  background: #ffffff;
-  box-shadow: var(--shadow-soft);
-  transition: background var(--transition), color var(--transition), transform var(--transition);
+  background: var(--color-light);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  transition: all var(--transition);
 }
 
 .miniCard svg {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   color: var(--color-primary);
-  transition: color var(--transition);
+  margin-bottom: 12px;
+  transition: all var(--transition);
 }
 
 .miniCard h3 {
-  margin: 12px 0 0;
-  color: var(--color-secondary);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1;
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  line-height: 1.2;
   transition: color var(--transition);
 }
 
 .miniCard:hover {
   background: var(--color-primary);
-  transform: translateY(-4px);
+  border-color: var(--color-primary);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-soft);
 }
 
-.miniCard:hover svg,
+.miniCard:hover svg {
+  color: var(--color-secondary);
+  transform: scale(1.1);
+}
+
 .miniCard:hover h3 {
   color: #ffffff;
+}
+
+.aboutTitle {
+  color: var(--color-primary) !important;
+}
+
+.accentText {
+  color: var(--color-secondary);
 }
 
 .serviceGrid {

@@ -34,7 +34,9 @@ export default function HomePage() {
           </ScrollReveal>
           <ScrollReveal direction="right">
             <p className="eyebrow">About Us</p>
-            <h2 className="sectionTitle">Wheelpet India - Safe Journeys. Happy Paws.</h2>
+            <h2 className={`sectionTitle ${styles.aboutTitle}`}>
+              Wheelpet India - <span className={styles.accentText}>Safe Journeys. Happy Paws.</span>
+            </h2>
             <p className="sectionText">
               Wheelpet India is a premium animal travel agency and vehicle transport provider. We specialize in professional pet transport, dog shipping, and dedicated car courier service options across major corridors in India.
             </p>

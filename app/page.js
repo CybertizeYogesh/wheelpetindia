@@ -90,7 +90,9 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <p className="eyebrow">Our Process</p>
-          <h2 className="sectionTitle">How It Works</h2>
+          <h2 className={`sectionTitle ${styles.aboutTitle}`}>
+            How It <span className={styles.accentText}>Works</span>
+          </h2>
           <p className="sectionText">A straightforward process keeps your relocation planned, packed, moved, and delivered safely.</p>
           <div style={{ marginTop: 36 }}>
             <ProcessTimeline />
@@ -101,7 +103,9 @@ export default function HomePage() {
       <section className="section" style={{ background: "var(--color-light)" }}>
         <div className="container">
           <p className="eyebrow">Testimonials</p>
-          <h2 className="sectionTitle">What Our Customers Say</h2>
+          <h2 className={`sectionTitle ${styles.aboutTitle}`}>
+            What Our <span className={styles.accentText}>Customers Say</span>
+          </h2>
           <div style={{ marginTop: 34 }}>
             <TestimonialSlider />
           </div>

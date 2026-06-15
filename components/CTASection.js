@@ -3,7 +3,7 @@ import Link from "next/link";
 import { assets, SITE } from "@/data/siteData";
 import styles from "@/styles/sections.module.css";
 
-export default function CTASection({ title = "24 Hours Support, Ready For Any Move.", text = "Need packing, moving, vehicle shifting, storage, or transport support? Sharma Packers & Movers is ready to plan your relocation with care." }) {
+export default function CTASection({ title = "Safe Vehicle & Pet Transport, Any Distance.", text = "Need a car courier service or professional pet transport? Wheelpet India is the best car shipping company and animal travel agency ready to support your move." }) {
   return (
     <section className={styles.cta}>
       <div className={`container ${styles.ctaInner}`}>

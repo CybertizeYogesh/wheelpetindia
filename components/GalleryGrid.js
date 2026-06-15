@@ -8,7 +8,7 @@ export default function GalleryGrid({ images = assets.gallery }) {
     <div className={styles.galleryGrid}>
       {images.map((image, index) => (
         <ScrollReveal delay={index * 0.04} className={styles.galleryItem} key={image}>
-          <Image src={image} alt={`Sharma Packers Movers gallery ${index + 1}`} width={520} height={420} />
+          <Image src={image} alt={`Wheelpet India gallery ${index + 1}`} width={520} height={420} />
         </ScrollReveal>
       ))}
     </div>

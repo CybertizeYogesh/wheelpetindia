@@ -6,17 +6,17 @@ import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { assets, blogPosts, getLocationBySlug, getPostBySlug, getServiceBySlug, locations, services } from "@/data/siteData";
 
 const internationalService = {
-  ...services[2],
-  slug: "international-packers-and-movers",
-  title: "International Packers and Movers",
-  intro: "International Packers and Movers support customers with organized packing, documentation guidance, transportation planning, and careful handling for overseas movement.",
+  ...services[0],
+  slug: "international-car-and-pet-transport",
+  title: "International Car & Pet Transport",
+  intro: "International Car & Pet Transport supports customers with organized shipping, customs documentation, transit planning, and careful handling for overseas movement.",
   detail: [
-    "Moving goods internationally needs practical planning, secure packaging, inventory preparation, and careful coordination.",
-    "Sharma Packers & Movers helps customers organize household and commercial material for international relocation requirements.",
-    "The team focuses on safe packing, clear communication, and dependable movement support from pickup to handover."
+    "Shipping vehicles and pets internationally requires precise logistical planning, custom travel crates, secure shipping containers, and clear documentation.",
+    "Wheelpet India helps customers coordinate cross-border permits, quarantine checks, custom clearances, and air/sea freight bookings.",
+    "Our global partner network ensures that your car courier service and professional pet transport details are handled smoothly from pickup to delivery."
   ],
-  benefits: ["Export-quality packing guidance", "Inventory preparation", "Door pickup support", "Careful handling"],
-  process: ["Survey", "Packing", "Documentation guidance", "Transport coordination"]
+  benefits: ["Customs clearance & paperwork support", "Export-quality crates & containers", "Dedicated relocation manager", "International quarantine guidance"],
+  process: ["Booking & document prep", "Custom quarantine crate setup", "Sea/air freight coordination", "Destination port clearance"]
 };
 
 export function generateStaticParams() {
@@ -25,7 +25,7 @@ export function generateStaticParams() {
     ...locations.map((location) => ({ slug: location.originalSlug })),
     ...blogPosts.map((post) => ({ slug: post.slug })),
     { slug: "sample-page" },
-    { slug: "international-packers-and-movers" }
+    { slug: "international-car-and-pet-transport" }
   ];
 }
 
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
   const service = getServiceBySlug(slug);
   const location = getLocationBySlug(slug);
   const post = getPostBySlug(slug);
-  if (slug === "international-packers-and-movers") {
+  if (slug === "international-car-and-pet-transport") {
     return { title: internationalService.title, description: internationalService.intro };
   }
   if (service) return { title: service.title, description: service.intro };
@@ -49,7 +49,7 @@ export default async function LegacySlugPage({ params }) {
   const service = getServiceBySlug(slug);
   if (service) return <ServiceDetailLayout service={service} />;
 
-  if (slug === "international-packers-and-movers") {
+  if (slug === "international-car-and-pet-transport") {
     return <ServiceDetailLayout service={internationalService} />;
   }
 

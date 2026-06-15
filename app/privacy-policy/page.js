@@ -4,7 +4,7 @@ import styles from "@/styles/sections.module.css";
 
 export const metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for Sharma Packers & Movers."
+  description: "Privacy policy for Wheelpet India."
 };
 
 export default function PrivacyPolicyPage() {

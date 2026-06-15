@@ -14,7 +14,7 @@ export default function ContactPageContent() {
         <div className={`container ${styles.twoCol}`}>
           <div className={styles.article}>
             <p className="eyebrow">Contact Us</p>
-            <h2>Get In Touch With Sharma Packers Movers</h2>
+            <h2>Get In Touch With Wheelpet India</h2>
             <p>Share your moving date, origin, destination, and service requirement. Our relocation team will guide you with a practical estimate and moving plan.</p>
             <h3>Contact Info</h3>
             <ul className={styles.checkGrid}>
@@ -33,7 +33,7 @@ export default function ContactPageContent() {
       <section className="sectionTight" style={{ background: "var(--color-light)" }}>
         <div className="container">
           <iframe
-            title="Sharma Packers Movers map"
+            title="Wheelpet India map"
             src="https://maps.google.com/maps?q=Bikaner%20Rajasthan&t=&z=12&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="420"

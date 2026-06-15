@@ -16,10 +16,10 @@ export default function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className={styles.heroKicker}>Sharma Packers Movers</p>
-          <h1 className={styles.heroTitle}>Best Packer <span>& Movers</span></h1>
+          <p className={styles.heroKicker}>Wheelpet India</p>
+          <h1 className={styles.heroTitle}>Best Car <span>& Pet Shipping</span></h1>
           <p className={styles.heroText}>
-            Sharma Packers and Movers in Bikaner offers reliable relocation services with timely movement, expert packing, safe handling, and professional customer support.
+            Wheelpet India offers premium vehicle transport, specialized car courier service, and professional pet transport across India. We ensure a safe journey and happy paws for your vehicles and pets.
           </p>
           <div className={styles.heroActions}>
             <Link className="btn" href="/contact-us/">Get A Quote</Link>

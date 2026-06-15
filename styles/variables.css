@@ -1,12 +1,12 @@
 :root {
-  --color-primary: #fc0000;
-  --color-secondary: #182937;
-  --color-text: #5e5e5e;
-  --color-accent: #12365d;
+  --color-primary: #0d2b45;
+  --color-secondary: #0fdbf2;
+  --color-text: #4e5d6c;
+  --color-accent: #19466c;
   --color-white: #ffffff;
-  --color-light: #f7f7f7;
-  --color-border: #eaeaea;
-  --color-muted: #f2f4f6;
+  --color-light: #f5f7fa;
+  --color-border: #e2e8f0;
+  --color-muted: #edf2f7;
   --font-body: "Roboto", Arial, sans-serif;
   --container: 1140px;
   --container-wide: 1290px;

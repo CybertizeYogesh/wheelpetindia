@@ -42,7 +42,7 @@ export default function QuoteForm({ compact = false, title = "Book Now!" }) {
     if (Object.keys(nextErrors).length) return;
     setStatus("loading");
     window.setTimeout(() => {
-      console.info("Sharma Packers Movers quote lead", values);
+      console.info("Wheelpet India quote lead", values);
       setStatus("success");
       setValues(initialValues);
     }, 650);
@@ -66,7 +66,7 @@ export default function QuoteForm({ compact = false, title = "Book Now!" }) {
         </label>
       ))}
       <button className="btn" type="submit" disabled={status === "loading"}>
-        {status === "loading" ? "Submitting..." : compact ? "Submit Button" : "Submit Button"}
+        {status === "loading" ? "Submitting..." : compact ? "Get Price Quote" : "Book Shifting Now"}
       </button>
       {status === "success" ? <div className={styles.success}>Thank you. Our relocation team will contact you shortly.</div> : null}
     </form>

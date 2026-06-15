@@ -50,10 +50,10 @@ export default function Header() {
       <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ""}`}>
         <div className={`containerWide ${styles.navInner}`}>
           <Link className={styles.brand} href="/">
-            <Image className={styles.logoMark} src={assets.logo} alt="Sharma Packers Movers logo" width={58} height={58} priority />
+            <Image className={styles.logoMark} src={assets.logo} alt="Wheelpet India logo" width={58} height={58} priority />
             <span className={styles.brandText}>
-              <span>Sharma Packers</span>
-              <span>Movers</span>
+              <span>Wheelpet</span>
+              <span>India</span>
             </span>
           </Link>
           <nav className={styles.nav} aria-label="Primary navigation">
@@ -71,8 +71,8 @@ export default function Header() {
             ))}
           </nav>
           <div className={styles.navCtas}>
-            <a className={styles.iconButton} aria-label="Call Sharma Packers Movers" href={`tel:${SITE.phoneCompact}`}><FaPhoneAlt /></a>
-            <a className={styles.iconButton} aria-label="WhatsApp Sharma Packers Movers" href={`https://api.whatsapp.com/send?phone=${SITE.phoneCompact}&text=${encodeURIComponent(SITE.whatsappText)}`}><FaWhatsapp /></a>
+            <a className={styles.iconButton} aria-label="Call Wheelpet India" href={`tel:${SITE.phoneCompact}`}><FaPhoneAlt /></a>
+            <a className={styles.iconButton} aria-label="WhatsApp Wheelpet India" href={`https://api.whatsapp.com/send?phone=${SITE.phoneCompact}&text=${encodeURIComponent(SITE.whatsappText)}`}><FaWhatsapp /></a>
             <Link className="btn" href="/contact-us/">Get Quote</Link>
           </div>
           <button className={`${styles.iconButton} ${styles.hamburger}`} type="button" aria-label="Open menu" onClick={() => setOpen(true)}>
@@ -101,8 +101,8 @@ export default function Header() {
             >
               <div className={styles.drawerHead}>
                 <Link className={styles.brand} href="/">
-                  <Image className={styles.logoMark} src={assets.logo} alt="Sharma Packers Movers logo" width={52} height={52} />
-                  <span className={styles.brandText}><span>Sharma Packers</span><span>Movers</span></span>
+                  <Image className={styles.logoMark} src={assets.logo} alt="Wheelpet India logo" width={52} height={52} />
+                  <span className={styles.brandText}><span>Wheelpet</span><span>India</span></span>
                 </Link>
                 <button className={styles.iconButton} type="button" aria-label="Close menu" onClick={() => setOpen(false)}><FaTimes /></button>
               </div>

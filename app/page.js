@@ -26,19 +26,19 @@ export default function HomePage() {
         <div className={`container ${styles.twoCol}`}>
           <ScrollReveal direction="left">
             <div className={styles.imageStack}>
-              <Image src={assets.about} alt="Packers and movers worker" width={650} height={800} />
-              <Image src={assets.why} alt="Moving service support" width={420} height={520} />
+              <Image src={assets.about} alt="Professional pet relocation specialist" width={650} height={800} />
+              <Image src={assets.why} alt="Auto transport carrier" width={420} height={520} />
               <div className={styles.factBadge}><span><strong>18</strong>Years of Experience</span></div>
             </div>
           </ScrollReveal>
           <ScrollReveal direction="right">
             <p className="eyebrow">About Us</p>
-            <h2 className="sectionTitle">Sharma Packers & Movers - You inspire Us!</h2>
+            <h2 className="sectionTitle">Wheelpet India - Safe Journeys. Happy Paws.</h2>
             <p className="sectionText">
-              Sharma Packers and Movers is a well-known service provider in the packing and moving industry. We offer hassle-free, quick, and high-quality services for households, offices, vehicles, and storage needs.
+              Wheelpet India is a premium animal travel agency and vehicle transport provider. We specialize in professional pet transport, dog shipping, and dedicated car courier service options across major corridors in India.
             </p>
             <p className="sectionText">
-              With maintained facilities, warehouse support, skilled teams, and 700+ trucks operating throughout India, our company provides comprehensive shifting solutions at competitive prices.
+              Whether you need to ship dog to another state safely or require the best car shipping company for your luxury sedan, we coordinate secure trailers, air-conditioned pet cabs, and trained pet handlers for a smooth transfer.
             </p>
             <div className={styles.miniGrid}>
               {[
@@ -59,8 +59,8 @@ export default function HomePage() {
       <section className="section" style={{ background: "var(--color-light)" }}>
         <div className="container">
           <p className="eyebrow">Our Services</p>
-          <h2 className="sectionTitle">Moving Services For Every Need</h2>
-          <p className="sectionText">We cover home shifting, corporate relocation, transportation, storage, vehicle shifting, and packaging with a practical, customer-first workflow.</p>
+          <h2 className="sectionTitle">Car Moving & Pet Relocation Services</h2>
+          <p className="sectionText">We provide custom car courier service packages, professional pet transport, secure vehicle transport, and long-distance dog shipping with active care.</p>
           <div style={{ marginTop: 38 }}>
             <ServiceGrid items={services} limit={6} />
           </div>
@@ -70,8 +70,8 @@ export default function HomePage() {
       <section className={`section ${styles.darkBand}`}>
         <div className="container">
           <p className="eyebrow">Why Choose Us</p>
-          <h2 className="sectionTitle">Moving Made Easy With Sharma Packers</h2>
-          <p className="sectionText">From survey to delivery, our team uses organized packing, trained handling, and careful movement to protect your belongings.</p>
+          <h2 className="sectionTitle">Best Car Shipping & Dog Shipping Company</h2>
+          <p className="sectionText">From detailed car condition checks to climate-controlled animal travel agency cabs, we ensure your vehicles and pets travel safely.</p>
           <div style={{ marginTop: 36 }}>
             <StatsCounter />
           </div>
@@ -137,7 +137,7 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <p className="eyebrow">News & Blog</p>
-          <h2 className="sectionTitle">Latest Moving Tips</h2>
+          <h2 className="sectionTitle">Latest Car & Pet Transport Articles</h2>
           <div style={{ marginTop: 34 }}>
             <BlogGrid limit={3} />
           </div>
@@ -148,8 +148,8 @@ export default function HomePage() {
         <div className="container" style={{ textAlign: "center" }}>
           <FaBoxOpen size={42} color="var(--color-primary)" />
           <p className="eyebrow" style={{ marginTop: 14 }}>Need A Quote?</p>
-          <h2 className="sectionTitle">Moving Is Quick With A Reliable Team</h2>
-          <p className="sectionText">Book professional packers and movers for your next relocation.</p>
+          <h2 className="sectionTitle">Car & Pet Relocation Made Simple</h2>
+          <p className="sectionText">Book the best car delivery service and dog shipping experts for your next transfer.</p>
           <div style={{ marginTop: 25 }}>
             <Link className="btn" href="/contact-us/">Contact Us</Link>
           </div>

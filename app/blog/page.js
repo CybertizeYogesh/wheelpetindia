@@ -5,7 +5,7 @@ import { assets } from "@/data/siteData";
 
 export const metadata = {
   title: "Blog",
-  description: "Moving tips and relocation guidance from Sharma Packers & Movers."
+  description: "Car shipping and dog shipping tips from Wheelpet India, a trusted animal travel agency."
 };
 
 export default function BlogPage() {
@@ -15,7 +15,7 @@ export default function BlogPage() {
       <section className="section">
         <div className="container">
           <p className="eyebrow">News & Blog</p>
-          <h1 className="sectionTitle">Latest Moving Tips</h1>
+          <h1 className="sectionTitle">Latest Car & Pet Transport Articles</h1>
           <div style={{ marginTop: 34 }}>
             <BlogGrid />
           </div>

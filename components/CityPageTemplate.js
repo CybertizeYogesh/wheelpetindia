@@ -13,8 +13,8 @@ import styles from "@/styles/sections.module.css";
 export default function CityPageTemplate({ location }) {
   const localFaqs = [
     {
-      question: `Do you provide local house shifting in ${location.name}?`,
-      answer: `Yes. Sharma Packers & Movers provides local and domestic house shifting in ${location.name} with packing, loading, transport, unloading, and placement support.`
+      question: `Do you provide vehicle transport and pet relocation in ${location.name}?`,
+      answer: `Yes. Wheelpet India provides professional pet transport and vehicle transport in ${location.name} with climate-controlled cabins and secure carriers.`
     },
     {
       question: `Can I book vehicle shifting from ${location.name}?`,
@@ -33,7 +33,7 @@ export default function CityPageTemplate({ location }) {
             <p className="eyebrow">{location.subtitle}</p>
             <h2>{location.title}</h2>
             <p>
-              Sharma Packers and Movers in {location.name} offers professional packing, moving, transport, vehicle shifting, loading, unloading, and storage support for families and businesses.
+              Wheelpet India in {location.name} offers specialized car courier service, car moving service, and dog shipping support for families and businesses.
             </p>
             <p>
               The team works across {location.nearby}. Each move is planned according to item volume, route, building access, packing needs, and delivery schedule.
@@ -55,7 +55,7 @@ export default function CityPageTemplate({ location }) {
       <section className="section" style={{ background: "var(--color-light)" }}>
         <div className="container">
           <p className="eyebrow">Our Services</p>
-          <h2 className="sectionTitle">Packers And Movers Services In {location.name}</h2>
+          <h2 className="sectionTitle">Car & Pet Shifting Services In {location.name}</h2>
           <p className="sectionText">Choose complete relocation support or a single service based on your requirement.</p>
           <div style={{ marginTop: 34 }}>
             <ServiceGrid items={services.slice(0, 6)} />
@@ -79,13 +79,13 @@ export default function CityPageTemplate({ location }) {
       <section className="sectionTight">
         <div className="container">
           <p className="eyebrow">Testimonials</p>
-          <h2 className="sectionTitle">Customers Trust Sharma Packers</h2>
+          <h2 className="sectionTitle">Customers Trust Wheelpet India</h2>
           <div style={{ marginTop: 30 }}>
             <TestimonialSlider items={testimonials} />
           </div>
         </div>
       </section>
-      <CTASection title={`Moving From ${location.name}?`} text="Share your location, moving date, and destination. Sharma Packers & Movers will help you plan a dependable relocation." />
+      <CTASection title={`Moving From ${location.name}?`} text="Share your location, moving date, and destination. Wheelpet India will help you plan a dependable car courier service and pet relocation." />
     </>
   );
 }

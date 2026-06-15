@@ -5,7 +5,7 @@ import { assets } from "@/data/siteData";
 
 export const metadata = {
   title: "Testimonials",
-  description: "Customer testimonials for Sharma Packers & Movers relocation services."
+  description: "Customer testimonials for Wheelpet India vehicle and pet transport services."
 };
 
 export default function TestimonialsPage() {

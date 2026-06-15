@@ -14,7 +14,7 @@ export default function BlogPostTemplate({ post }) {
             <Image src={post.image} alt={post.title} width={1000} height={560} />
           </div>
           {post.content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-          <h3>Why Sharma Packers & Movers?</h3>
+          <h3>Why Wheelpet India?</h3>
           <p>The company combines organized packing, safe transport, trained workers, and customer-focused communication to make moving less stressful.</p>
         </article>
       </section>

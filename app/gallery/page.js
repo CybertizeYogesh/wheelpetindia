@@ -5,7 +5,7 @@ import { assets } from "@/data/siteData";
 
 export const metadata = {
   title: "Gallery",
-  description: "Gallery of Sharma Packers & Movers packing, moving, transport, and relocation work."
+  description: "Gallery of Wheelpet India's car courier service and professional pet transport operations."
 };
 
 export default function GalleryPage() {

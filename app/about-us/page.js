@@ -2,7 +2,7 @@ import AboutPageContent from "@/components/AboutPageContent";
 
 export const metadata = {
   title: "About Us",
-  description: "About Sharma Packers & Movers, a trusted packing and moving company with relocation services across India."
+  description: "Learn more about Wheelpet India, a trusted vehicle and pet relocation company offering specialized car courier and professional pet transport services across India."
 };
 
 export default function AboutUsPage() {

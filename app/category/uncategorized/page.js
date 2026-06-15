@@ -4,7 +4,7 @@ import { assets } from "@/data/siteData";
 
 export const metadata = {
   title: "Uncategorized",
-  description: "Uncategorized moving articles from Sharma Packers & Movers."
+  description: "Uncategorized car and pet transport articles from Wheelpet India."
 };
 
 export default function CategoryPage() {

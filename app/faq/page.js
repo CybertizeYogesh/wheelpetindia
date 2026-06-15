@@ -5,7 +5,7 @@ import { assets } from "@/data/siteData";
 
 export const metadata = {
   title: "FAQ",
-  description: "Frequently asked questions about Sharma Packers & Movers relocation services."
+  description: "Frequently asked questions about Wheelpet India's auto transport and dog shipping services."
 };
 
 export default function FAQPage() {

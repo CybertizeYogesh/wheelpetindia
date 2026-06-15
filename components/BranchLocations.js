@@ -8,7 +8,7 @@ export default function BranchLocations() {
       <div className="containerWide">
         <p className="eyebrow">Our Branches</p>
         <h2 className="sectionTitle">Our Network Across India</h2>
-        <p className="sectionText">Find Sharma Packers & Movers support in major relocation corridors and nearby cities.</p>
+        <p className="sectionText">Find Wheelpet India support in major relocation corridors and nearby cities.</p>
         <div className={styles.branches} style={{ marginTop: 30, background: "var(--color-secondary)", padding: 26 }}>
           {branchColumns.map((column, index) => (
             <div key={index}>

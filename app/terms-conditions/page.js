@@ -4,7 +4,7 @@ import styles from "@/styles/sections.module.css";
 
 export const metadata = {
   title: "Terms Conditions",
-  description: "Terms and conditions for Sharma Packers & Movers relocation services."
+  description: "Terms and conditions for Wheelpet India vehicle and pet relocation services."
 };
 
 export default function TermsConditionsPage() {

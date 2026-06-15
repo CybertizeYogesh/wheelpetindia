@@ -11,10 +11,10 @@ export default function Footer() {
         <div className={styles.footerGrid}>
           <div>
             <Link className={styles.footerLogo} href="/">
-              <Image src={assets.logo} alt="Sharma Packers Movers logo" width={58} height={58} />
-              <strong>Sharma Packers Movers</strong>
+              <Image src={assets.logo} alt="Wheelpet India logo" width={58} height={58} />
+              <strong>Wheelpet India</strong>
             </Link>
-            <p>Sharma Packers & Movers is a trusted relocation company offering careful packing, moving, storage, vehicle shifting, and transport support across India.</p>
+            <p>Wheelpet India is a trusted vehicle and pet relocation company offering specialized car courier service, auto transport, and professional dog shipping support across India.</p>
           </div>
           <div>
             <h3>Quick Links</h3>
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={`containerWide ${styles.copyright}`}>
-        <span>Copyright © 2025 Sharma Packers Movers. All rights reserved.</span>
+        <span>Copyright © 2026 Wheelpet India. All rights reserved.</span>
         <span>Manage by <a href="https://www.brosistech.com/">Brosis Technologies</a>.</span>
       </div>
     </footer>

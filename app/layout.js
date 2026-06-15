@@ -7,26 +7,23 @@ import "@/styles/globals.css";
 export const metadata = {
   metadataBase: new URL(SITE.baseUrl),
   title: {
-    default: "Sharma Packer Movers | Best packer & Movers in bikaner,Rajasthan",
-    template: "%s | Sharma Packers Movers"
+    default: "Wheelpet India | Car Courier Service & Professional Pet Transport",
+    template: "%s | Wheelpet India"
   },
-  description: "Sharma Packers and Movers in Bikaner offers relocation services with timely movement, expert packing, and careful handling.",
-  alternates: {
-    canonical: "/"
-  },
+  description: "Wheelpet India offers safe vehicle transport and professional pet transport across India. Trust the best car shipping and dog shipping company.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE.baseUrl,
-    siteName: "Sharma Packers Movers",
-    title: "Sharma Packer Movers | Best packer & Movers in bikaner,Rajasthan",
-    description: "Sharma Packers and Movers in Bikaner offers relocation services with timely movement, expert packing, and careful handling.",
+    siteName: "Wheelpet India",
+    title: "Wheelpet India | Car Courier Service & Professional Pet Transport",
+    description: "Wheelpet India offers safe vehicle transport and professional pet transport across India. Trust the best car shipping and dog shipping company.",
     images: [assets.logo]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sharma Packer Movers | Best packer & Movers in bikaner,Rajasthan",
-    description: "Reliable packing and moving services across India."
+    title: "Wheelpet India | Car Courier Service & Professional Pet Transport",
+    description: "Wheelpet India offers safe vehicle transport and professional pet transport across India. Trust the best car shipping and dog shipping company."
   },
   icons: {
     icon: assets.logo,

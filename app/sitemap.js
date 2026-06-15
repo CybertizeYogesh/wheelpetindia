@@ -4,9 +4,7 @@ export default function sitemap() {
   const now = new Date();
   const staticRoutes = [
     "",
-    "about",
     "about-us",
-    "contact",
     "contact-us",
     "services",
     "gallery",
@@ -20,9 +18,9 @@ export default function sitemap() {
     "terms-conditions"
   ];
 
-  const serviceRoutes = services.flatMap((service) => [`services/${service.slug}`, service.slug]);
-  const locationRoutes = locations.flatMap((location) => [`locations/${location.slug}`, location.originalSlug]);
-  const postRoutes = blogPosts.flatMap((post) => [`blog/${post.slug}`, post.slug]);
+  const serviceRoutes = services.map((service) => `services/${service.slug}`);
+  const locationRoutes = locations.map((location) => `locations/${location.slug}`);
+  const postRoutes = blogPosts.map((post) => `blog/${post.slug}`);
 
   return [...staticRoutes, ...serviceRoutes, ...locationRoutes, ...postRoutes].map((route) => ({
     url: `${SITE.baseUrl}/${route}`,

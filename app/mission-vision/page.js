@@ -6,7 +6,7 @@ import styles from "@/styles/sections.module.css";
 
 export const metadata = {
   title: "Mission Vision",
-  description: "Mission and vision of Sharma Packers & Movers."
+  description: "Mission and vision of Wheelpet India for car and pet transport."
 };
 
 export default function MissionVisionPage() {
@@ -18,22 +18,22 @@ export default function MissionVisionPage() {
           <div className={styles.article}>
             <p className="eyebrow">Our Mission</p>
             <h2>Quick, Hassle-Free Logistics</h2>
-            <p>Our goal is to provide items and logistics to our customers in a hassle-free and well-focused manner. We always provide our best and reassure clients that they can trust us completely.</p>
+            <p>Our mission is to provide safe and stress-free transport for your vehicles and pets. We combine specialized carriers and climate-controlled pet cabins to ensure a happy, reliable journey.</p>
           </div>
           <div className={styles.articleImage} style={{ margin: 0 }}>
-            <Image src="/uploads/2025/01/female-entrepreneur-talking-to-movers-in-new-restaurant.webp" alt="Our mission" width={680} height={420} />
+            <Image src="/about_transport.png" alt="Our car and pet transport mission" width={680} height={420} />
           </div>
         </div>
       </section>
       <section className="section" style={{ background: "var(--color-light)" }}>
         <div className={`container ${styles.twoCol}`}>
           <div className={styles.articleImage} style={{ margin: 0 }}>
-            <Image src="/uploads/2025/01/young-mover-with-packaged-product.webp" alt="Our vision" width={680} height={420} />
+            <Image src="/why_transport.png" alt="Our car and pet transport vision" width={680} height={420} />
           </div>
           <div className={styles.article}>
             <p className="eyebrow">Our Vision</p>
-            <h2>Fast And Well-Mannered Shifting Services</h2>
-            <p>Our vision is to provide fast, well-mannered, and dependable services in the sector of shifting goods while contributing to national advancement.</p>
+            <h2>Reliable Vehicle & Pet Relocation</h2>
+            <p>Our vision is to be the most trusted auto transport and dog shipping company in India, setting the highest standards for pet safety and car carrier delivery.</p>
           </div>
         </div>
       </section>

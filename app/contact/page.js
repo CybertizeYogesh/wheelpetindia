@@ -2,7 +2,7 @@ import ContactPageContent from "@/components/ContactPageContent";
 
 export const metadata = {
   title: "Contact Us",
-  description: "Contact Sharma Packers & Movers for packing, moving, transport, storage, and vehicle shifting services."
+  description: "Contact Wheelpet India for professional pet transport, dog shipping, car courier service, and vehicle transport services."
 };
 
 export default function ContactPage() {

@@ -64,7 +64,7 @@ export const services = [
     slug: "car-courier-service",
     title: "Car Courier Service",
     short: "Secure car moving service utilizing premium carriers for door-to-door delivery.",
-    image: "/uploads/2025/11/image-42.webp",
+    image: "/why_transport.png",
     icon: "FaCar",
     intro: "Our car courier service offers reliable vehicle transport solutions across India with specialized open and enclosed auto transport carriers.",
     detail: [
@@ -89,7 +89,7 @@ export const services = [
     slug: "dog-shipping",
     title: "Dog Shipping & Relocation",
     short: "Professional pet transport to ship dog to another state comfortably.",
-    image: "/uploads/2025/01/moving-in-new-house.webp",
+    image: "/blog_dog.png",
     icon: "FaDog",
     intro: "Ship dog to another state safely with Wheelpet India, a trusted animal travel agency offering professional pet transport and custom crates.",
     detail: [
@@ -114,7 +114,7 @@ export const services = [
     slug: "vehicle-transport",
     title: "Vehicle Transport",
     short: "Dependable auto transport companies support for domestic car shipping.",
-    image: "/uploads/2025/11/image-55.webp",
+    image: "/blog_car.png",
     icon: "FaTruckMoving",
     intro: "Get the best car shipping company support for domestic vehicle transport and intercity car delivery service.",
     detail: [
@@ -139,7 +139,7 @@ export const services = [
     slug: "professional-pet-transport",
     title: "Professional Pet Transport",
     short: "Domestic pet travel agency handling dogs, cats, and small animals.",
-    image: "/uploads/2025/01/business-lady-asking-mover-about-delivery-order.webp",
+    image: "/about_transport.png",
     icon: "FaPaw",
     intro: "Wheelpet India is a dedicated animal travel agency providing professional pet transport and dog shipping across major cities.",
     detail: [
@@ -189,7 +189,7 @@ export const services = [
     slug: "pet-cab-boarding",
     title: "Pet Cab & Boarding",
     short: "Air-conditioned pet cabs for local transit and travel boarding facilities.",
-    image: "/uploads/2025/02/A-big-box-1024x1024.webp",
+    image: "/blog_pet.png",
     icon: "FaTaxi",
     intro: "Our professional pet transport services include customized pet cabs and travel boarding support to prepare your pet for transit.",
     detail: [

@@ -62,7 +62,9 @@ export default function HomePage() {
       <section className="section" style={{ background: "var(--color-light)" }}>
         <div className="container">
           <p className="eyebrow">Our Services</p>
-          <h2 className="sectionTitle">Car Moving & Pet Relocation Services</h2>
+          <h2 className={`sectionTitle ${styles.aboutTitle}`}>
+            Car Moving & <span className={styles.accentText}>Pet Relocation Services</span>
+          </h2>
           <p className="sectionText">We provide custom car courier service packages, professional pet transport, secure vehicle transport, and long-distance dog shipping with active care.</p>
           <div style={{ marginTop: 38 }}>
             <ServiceGrid items={services} limit={6} />

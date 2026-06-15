@@ -1077,3 +1077,117 @@
     gap: 16px;
   }
 }
+
+/* Partner Marquee Styles */
+.marqueeSection {
+  padding: 40px 0;
+  background: var(--color-light);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+  width: 100%;
+}
+
+.marqueeContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marqueeContainer::before,
+.marqueeContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeContainer::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-light) 0%, rgba(245, 247, 250, 0) 100%);
+}
+
+.marqueeContainer::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-light) 0%, rgba(245, 247, 250, 0) 100%);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 50px;
+  animation: marqueeScroll 40s linear infinite;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: all var(--transition);
+  user-select: none;
+}
+
+.logoItem:hover {
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+}
+
+.logoIcon {
+  font-size: 24px;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition);
+}
+
+.logoItem:hover .logoIcon {
+  color: var(--color-secondary);
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoTitle {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.logoSubtitle {
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

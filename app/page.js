@@ -13,6 +13,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ServiceGrid from "@/components/ServiceGrid";
 import StatsCounter from "@/components/StatsCounter";
 import TestimonialSlider from "@/components/TestimonialSlider";
+import PartnerMarquee from "@/components/PartnerMarquee";
 import { assets, services } from "@/data/siteData";
 import styles from "@/styles/sections.module.css";
 
@@ -78,13 +79,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="sectionTight">
-        <div className="container">
-          <div className={styles.partnerGrid}>
-            {assets.partners.map((partner) => <Image src={partner} alt="Client partner logo" width={360} height={90} key={partner} />)}
-          </div>
-        </div>
-      </section>
+      <PartnerMarquee />
 
       <CTASection />
 

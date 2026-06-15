@@ -154,28 +154,30 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className={styles.quoteBannerCard}>
-            <div className={styles.icon}>
-              <FaBoxOpen />
-            </div>
-            <p className="eyebrow" style={{ color: "var(--color-secondary)", margin: 0 }}>Need A Quote?</p>
-            <h2>Car & Pet Relocation Made Simple</h2>
-            <p>Book the best car delivery service and dog shipping experts for your next transfer.</p>
-            
-            <div className={styles.trustPointsGrid}>
-              {[
-                "IATA-Approved Pet Crates",
-                "GPS-Tracked Car Trailers",
-                "100% Insured Shifting"
-              ].map((text) => (
-                <div className={styles.trustPointItem} key={text}>
-                  <FaCheckCircle />
-                  <span>{text}</span>
+            <div className={styles.quoteBannerCardInner}>
+              <div className={styles.quoteBannerCardContent}>
+                <p className="eyebrow" style={{ color: "var(--color-secondary)", margin: 0 }}>Need A Quote?</p>
+                <h2>Car & Pet Relocation Made Simple</h2>
+                <p>Book the best car delivery service and dog shipping experts for your next transfer.</p>
+                
+                <div className={styles.trustPointsRow}>
+                  {[
+                    "IATA-Approved Pet Crates",
+                    "GPS-Tracked Car Trailers",
+                    "100% Insured Shifting"
+                  ].map((text) => (
+                    <div className={styles.trustPointBadge} key={text}>
+                      <FaCheckCircle />
+                      <span>{text}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
 
-            <div>
-              <Link className="btn btnSecondary" href="/contact-us/">Contact Us</Link>
+              <div className={styles.quoteActionBox}>
+                <Link className="btn" href="/contact-us/">Contact Us Now</Link>
+                <span className={styles.quoteActionSub}>Average response time: &lt; 15 mins</span>
+              </div>
             </div>
           </div>
         </div>

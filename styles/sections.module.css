@@ -7,14 +7,14 @@
   align-items: center;
   background-size: cover;
   background-position: center;
-  color: var(--color-secondary);
+  color: #ffffff;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(13, 43, 69, 0.9) 0%, rgba(13, 43, 69, 0.75) 100%);
 }
 
 .heroInner {
@@ -36,7 +36,7 @@
   margin: 0 0 18px;
   color: var(--color-secondary);
   font-size: clamp(13px, 1.2vw, 16px);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
   line-height: 1;
   text-transform: uppercase;
@@ -44,24 +44,24 @@
 
 .heroTitle {
   margin: 0;
-  color: var(--color-secondary);
+  color: #ffffff;
   font-size: clamp(46px, 5.5vw, 70px);
   font-weight: 900;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .heroTitle span {
   display: block;
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .heroText {
   max-width: min(610px, 100%);
   margin: 22px 0 28px;
-  color: var(--color-secondary);
+  color: #e2e8f0;
   font-size: clamp(15px, 1.35vw, 18px);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .heroActions {

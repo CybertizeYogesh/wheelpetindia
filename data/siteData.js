@@ -22,7 +22,7 @@ export const assets = {
   cta: "/cta_transport.png",
   map: "/uploads/2025/01/world-map-KAKTEK5-4-1024x581.webp",
   arrow: "/uploads/2025/01/arrow-moverie.webp",
-  box: "/about_transport.png",
+  box: "/cta_transport.png",
   featureIcons: [
     "/uploads/2025/02/cargo-truck-2.webp",
     "/uploads/2025/02/notes-1-1.webp",
@@ -41,9 +41,10 @@ export const assets = {
     "/about_transport.png",
     "/why_transport.png",
     "/cta_transport.png",
-    "/uploads/2025/11/image-42.webp",
-    "/uploads/2025/11/image-41.webp",
-    "/logo.jpg"
+    "/blog_dog.png",
+    "/blog_car.png",
+    "/blog_pet.png",
+    "/uploads/2025/01/courier-working-with-parcels-in-warehouse.webp"
   ],
   team: [
     "/uploads/2025/01/elderly-cargo-man-in-uniform-poses-in-home-office-6XAG2PS.webp",

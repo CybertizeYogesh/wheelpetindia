@@ -115,7 +115,9 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <p className="eyebrow">Gallery</p>
-          <h2 className="sectionTitle">Our Moving Moments</h2>
+          <h2 className={`sectionTitle ${styles.aboutTitle}`}>
+            Our Moving <span className={styles.accentText}>Moments</span>
+          </h2>
           <div style={{ marginTop: 34 }}>
             <GalleryGrid images={assets.gallery.slice(0, 8)} />
           </div>
@@ -126,7 +128,9 @@ export default function HomePage() {
         <div className={`container ${styles.twoCol}`}>
           <div>
             <p className="eyebrow">Questions</p>
-            <h2 className="sectionTitle">Frequently Asked Questions</h2>
+            <h2 className={`sectionTitle ${styles.aboutTitle}`}>
+              Frequently Asked <span className={styles.accentText}>Questions</span>
+            </h2>
             <div style={{ marginTop: 28 }}>
               <FAQAccordion />
             </div>

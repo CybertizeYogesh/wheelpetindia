@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight, FaBoxOpen, FaBriefcase, FaBuilding, FaCar, FaCarSide, FaHome, FaHouseUser, FaMotorcycle, FaPeopleCarry, FaTruckMoving, FaWarehouse } from "react-icons/fa";
+import { FaArrowRight, FaBoxOpen, FaBriefcase, FaBuilding, FaCar, FaCarSide, FaHome, FaHouseUser, FaMotorcycle, FaPeopleCarry, FaTruckMoving, FaWarehouse, FaDog, FaPaw, FaTaxi } from "react-icons/fa";
 import { services } from "@/data/siteData";
 import ScrollReveal from "@/components/ScrollReveal";
 import styles from "@/styles/sections.module.css";
@@ -16,7 +16,10 @@ const icons = {
   FaMotorcycle,
   FaPeopleCarry,
   FaBriefcase,
-  FaHouseUser
+  FaHouseUser,
+  FaDog,
+  FaPaw,
+  FaTaxi
 };
 
 export function ServiceCard({ service, index = 0 }) {

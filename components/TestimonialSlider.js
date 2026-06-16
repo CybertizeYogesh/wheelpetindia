@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { FaStar } from "react-icons/fa";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonials } from "@/data/siteData";
@@ -24,12 +25,17 @@ export default function TestimonialSlider({ items = testimonials }) {
       {items.map((item) => (
         <SwiperSlide key={item.name}>
           <article className={styles.testimonialCard}>
+            <div className={styles.testimonialRating} style={{ display: "flex", gap: "4px", marginBottom: "16px" }}>
+              {[...Array(item.rating || 5)].map((_, i) => (
+                <FaStar key={i} style={{ color: "#f2a30f", fontSize: "15px" }} />
+              ))}
+            </div>
             <p>“{item.text}”</p>
             <div className={styles.profile}>
               <Image src={item.avatar} alt={item.name} width={64} height={64} />
               <div>
                 <strong>{item.name}</strong>
-                <span>Customer</span>
+                <span>{item.service || "Verified Customer"}</span>
               </div>
             </div>
           </article>

@@ -14,13 +14,13 @@ export default function TermsConditionsPage() {
       <section className="section">
         <article className={`container ${styles.article}`}>
           <h2>Terms & Conditions</h2>
-          <p>These terms describe the general conditions for booking packing, moving, storage, vehicle shifting, and transportation services with {SITE.name}.</p>
+          <p>These terms describe the general conditions for booking car courier services, auto transport, dog shipping, pet relocation, and vehicle transportation services with {SITE.name}.</p>
           <h3>Booking</h3>
-          <p>Service dates, item volume, pickup location, destination, and access conditions should be shared accurately so the team can plan the move properly.</p>
+          <p>Service dates, vehicle dimensions, pet comfort needs, pickup location, destination, and access conditions should be shared accurately so the team can plan the transit properly.</p>
           <h3>Customer Responsibilities</h3>
-          <p>Customers should keep valuables, cash, jewellery, important documents, medicines, and personal essentials separately unless a written arrangement is made.</p>
+          <p>Customers must ensure that no cash, valuables, or personal belongings are left inside the vehicle during auto transport. For pet relocations, pet medication, health records, and essential comfort items should be handed over directly to our handlers at pickup.</p>
           <h3>Service Scope</h3>
-          <p>Final service scope, pricing, and delivery timelines depend on distance, inventory, manpower, vehicle availability, storage needs, and local conditions.</p>
+          <p>Final service scope, pricing, and delivery timelines depend on distance, route, vehicle availability, pet travel permits, and local conditions.</p>
         </article>
       </section>
     </>

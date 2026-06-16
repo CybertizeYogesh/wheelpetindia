@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import { SITE, assets, branchColumns, services } from "@/data/siteData";
+import { SITE, assets, services } from "@/data/siteData";
 import styles from "@/styles/components.module.css";
 
 export default function Footer() {
@@ -30,7 +30,7 @@ export default function Footer() {
           <div>
             <h3>Services</h3>
             <ul className={styles.footerList}>
-              {services.slice(0, 8).map((service) => (
+              {services.slice(0, 6).map((service) => (
                 <li key={service.slug}><Link href={`/services/${service.slug}/`}>{service.title}</Link></li>
               ))}
             </ul>
@@ -40,20 +40,28 @@ export default function Footer() {
             <ul className={styles.footerContact}>
               <li><FaPhoneAlt /><a href={`tel:${SITE.phoneCompact}`}>{SITE.phone}</a></li>
               <li><FaEnvelope /><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
-              {SITE.addresses.slice(0, 2).map((address) => <li key={address}><FaMapMarkerAlt /><span>{address}</span></li>)}
+              <li className={styles.footerHub}>
+                <FaMapMarkerAlt />
+                <div>
+                  <strong>Corporate HQ</strong>
+                  <span>Palya Road, Madnayakanhalli, Bangalore - 562162</span>
+                </div>
+              </li>
+              <li className={styles.footerHub}>
+                <FaMapMarkerAlt />
+                <div>
+                  <strong>Vehicle Transport Terminal</strong>
+                  <span>Yeshwanthpur Industrial Area, Bangalore - 560022</span>
+                </div>
+              </li>
+              <li className={styles.footerHub}>
+                <FaMapMarkerAlt />
+                <div>
+                  <strong>Pet Relocation Hub</strong>
+                  <span>Whitefield Main Road, Bangalore - 560066</span>
+                </div>
+              </li>
             </ul>
-          </div>
-        </div>
-        <div style={{ marginTop: 40 }}>
-          <h3>Branches</h3>
-          <div className={styles.branches}>
-            {branchColumns.map((column, columnIndex) => (
-              <div key={columnIndex}>
-                {column.map((city) => (
-                  <Link href={`/locations/${city.slug}/`} key={city.slug}>{city.name}</Link>
-                ))}
-              </div>
-            ))}
           </div>
         </div>
       </div>

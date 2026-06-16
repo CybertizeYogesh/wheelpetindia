@@ -17,7 +17,7 @@ export default function CityPageTemplate({ location }) {
       answer: `Yes. Wheelpet India provides professional pet transport and vehicle transport in ${location.name} with climate-controlled cabins and secure carriers.`
     },
     {
-      question: `Can I book vehicle shifting from ${location.name}?`,
+      question: `Can I book vehicle transport from ${location.name}?`,
       answer: `Yes. Cars and bikes can be moved from ${location.name} to major Indian cities with pickup coordination and careful vehicle handling.`
     },
     ...faqs.slice(0, 2)
@@ -36,13 +36,13 @@ export default function CityPageTemplate({ location }) {
               Wheelpet India in {location.name} offers specialized car courier service, car moving service, and dog shipping support for families and businesses.
             </p>
             <p>
-              The team works across {location.nearby}. Each move is planned according to item volume, route, building access, packing needs, and delivery schedule.
+              The team works across {location.nearby}. Each transit is planned according to vehicle dimensions, pet comfort needs, route conditions, and delivery schedules.
             </p>
             <p>
-              Customers can book household relocation, office shifting, bike transportation, car carrier service, warehousing, or complete door-to-door relocation from {location.name} to any major city in India.
+              Customers can book premium car courier service, auto transport, dedicated bike transport, dog shipping, cat transport, pet cabs, or complete interstate animal travel agency coordination from {location.name} to any major city in India.
             </p>
             <ul className={styles.checkGrid}>
-              {["Pre-move survey and estimate", "Quality packing material", "Trained loading staff", "Quick delivery coordination"].map((item) => (
+              {["Pre-transit vehicle inspections", "IATA-approved pet crates", "GPS-tracked car shipping trailers", "Dedicated pet travel handlers"].map((item) => (
                 <li key={item}><FaCheckCircle color="var(--color-primary)" /> {item}</li>
               ))}
             </ul>
@@ -55,8 +55,8 @@ export default function CityPageTemplate({ location }) {
       <section className="section" style={{ background: "var(--color-light)" }}>
         <div className="container">
           <p className="eyebrow">Our Services</p>
-          <h2 className="sectionTitle">Car & Pet Shifting Services In {location.name}</h2>
-          <p className="sectionText">Choose complete relocation support or a single service based on your requirement.</p>
+          <h2 className="sectionTitle">Car & Pet Transport Services In {location.name}</h2>
+          <p className="sectionText">Choose complete transport support or a single service based on your requirement.</p>
           <div style={{ marginTop: 34 }}>
             <ServiceGrid items={services.slice(0, 6)} />
           </div>
@@ -85,7 +85,7 @@ export default function CityPageTemplate({ location }) {
           </div>
         </div>
       </section>
-      <CTASection title={`Moving From ${location.name}?`} text="Share your location, moving date, and destination. Wheelpet India will help you plan a dependable car courier service and pet relocation." />
+      <CTASection title={`Shipping From ${location.name}?`} text="Share your location, shipping date, and destination. Wheelpet India will help you plan a dependable car courier service and pet relocation." />
     </>
   );
 }

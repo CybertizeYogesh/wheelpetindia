@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaBoxOpen, FaClock, FaHeadset, FaShieldAlt, FaCheckCircle } from "react-icons/fa";
+import { FaBoxOpen, FaClock, FaHeadset, FaShieldAlt, FaCheckCircle, FaCar, FaPaw } from "react-icons/fa";
 import BlogGrid from "@/components/BlogGrid";
 import BookNowStrip from "@/components/BookNowStrip";
 import BranchLocations from "@/components/BranchLocations";
@@ -29,7 +29,7 @@ export default function HomePage() {
             <div className={styles.imageStack}>
               <Image src={assets.about} alt="Professional pet relocation specialist" width={650} height={800} />
               <Image src={assets.why} alt="Auto transport carrier" width={420} height={520} />
-              <div className={styles.factBadge}><span><strong>18</strong>Years of Experience</span></div>
+              <div className={styles.factBadge}><span><strong>10+</strong>Years of Experience</span></div>
             </div>
           </ScrollReveal>
           <ScrollReveal direction="right">
@@ -93,7 +93,7 @@ export default function HomePage() {
           <h2 className={`sectionTitle ${styles.aboutTitle}`}>
             How It <span className={styles.accentText}>Works</span>
           </h2>
-          <p className="sectionText">A straightforward process keeps your relocation planned, packed, moved, and delivered safely.</p>
+          <p className="sectionText">A straightforward process keeps your transit planned, secured, transported, and delivered safely.</p>
           <div style={{ marginTop: 36 }}>
             <ProcessTimeline />
           </div>
@@ -116,7 +116,7 @@ export default function HomePage() {
         <div className="container">
           <p className="eyebrow">Gallery</p>
           <h2 className={`sectionTitle ${styles.aboutTitle}`}>
-            Our Moving <span className={styles.accentText}>Moments</span>
+            Our Transit <span className={styles.accentText}>Moments</span>
           </h2>
           <div style={{ marginTop: 34 }}>
             <GalleryGrid images={assets.gallery.slice(0, 8)} />
@@ -136,7 +136,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className={styles.articleImage} style={{ margin: 0 }}>
-            <Image src={assets.box} alt="Packed moving box" width={600} height={600} />
+            <Image src={assets.box} alt="Safe car and pet transport" width={600} height={600} />
           </div>
         </div>
       </section>
@@ -151,32 +151,58 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" style={{ background: "var(--color-light)", borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
-          <div className={styles.quoteBannerCard}>
-            <div className={styles.quoteBannerCardInner}>
-              <div className={styles.quoteBannerCardContent}>
-                <p className="eyebrow" style={{ color: "var(--color-secondary)", margin: 0 }}>Need A Quote?</p>
-                <h2>Car & Pet Relocation Made Simple</h2>
-                <p>Book the best car delivery service and dog shipping experts for your next transfer.</p>
-                
-                <div className={styles.trustPointsRow}>
-                  {[
-                    "IATA-Approved Pet Crates",
-                    "GPS-Tracked Car Trailers",
-                    "100% Insured Shifting"
-                  ].map((text) => (
-                    <div className={styles.trustPointBadge} key={text}>
-                      <FaCheckCircle />
-                      <span>{text}</span>
-                    </div>
-                  ))}
+          <div className={styles.quoteChoiceHeader}>
+            <p className="eyebrow" style={{ color: "var(--color-secondary)" }}>Calculate Shipping Cost</p>
+            <h2>Ready to Get <span className={styles.accentText}>Started?</span></h2>
+            <p className="sectionText" style={{ margin: "14px auto 0", textAlign: "center" }}>
+              Select your transport service below. Get a specialized quote tailored for your specific vehicle or pet travel needs.
+            </p>
+          </div>
+          
+          <div className={styles.quoteChoiceGrid}>
+            {/* Card 1: Car Shifting */}
+            <div className={styles.quoteChoiceCard}>
+              <div className={styles.quoteChoiceImageWrapper}>
+                <Image src="/why_transport.png" alt="Car Courier Service" width={450} height={250} className={styles.quoteChoiceImage} />
+                <div className={styles.quoteChoiceImageOverlay} />
+                <div className={styles.quoteChoiceIconBadge}>
+                  <FaCar />
                 </div>
               </div>
+              <div className={styles.quoteChoiceCardContent}>
+                <div className={styles.quoteChoiceBadge}>Vehicle Transport</div>
+                <h3>Premium Auto Transport</h3>
+                <p>Secure car courier services across India utilizing open & enclosed trailers with GPS tracking.</p>
+                <ul className={styles.quoteChoiceList}>
+                  <li><FaCheckCircle className={styles.checkIcon} /> Door-to-Door Courier</li>
+                  <li><FaCheckCircle className={styles.checkIcon} /> Enclosed Car Carriers</li>
+                  <li><FaCheckCircle className={styles.checkIcon} /> GPS Tracking & Transit Insurance</li>
+                </ul>
+                <Link className="btn" style={{ width: "100%" }} href="/contact-us/">Get Car Quote</Link>
+              </div>
+            </div>
 
-              <div className={styles.quoteActionBox}>
-                <Link className="btn" href="/contact-us/">Contact Us Now</Link>
-                <span className={styles.quoteActionSub}>Average response time: &lt; 15 mins</span>
+            {/* Card 2: Pet Relocation */}
+            <div className={styles.quoteChoiceCard}>
+              <div className={styles.quoteChoiceImageWrapper}>
+                <Image src="/about_transport.png" alt="Pet Relocation Service" width={450} height={250} className={styles.quoteChoiceImage} />
+                <div className={styles.quoteChoiceImageOverlay} />
+                <div className={styles.quoteChoiceIconBadge}>
+                  <FaPaw />
+                </div>
+              </div>
+              <div className={styles.quoteChoiceCardContent}>
+                <div className={styles.quoteChoiceBadge}>Pet Relocation</div>
+                <h3>Safe Animal Travel</h3>
+                <p>Professional pet transport, custom flight crates, and climate-controlled cabs for stress-free journeys.</p>
+                <ul className={styles.quoteChoiceList}>
+                  <li><FaCheckCircle className={styles.checkIcon} /> IATA-Approved Crates</li>
+                  <li><FaCheckCircle className={styles.checkIcon} /> Vet & Flight Documentation</li>
+                  <li><FaCheckCircle className={styles.checkIcon} /> AC Road & Air Transit</li>
+                </ul>
+                <Link className="btn" style={{ width: "100%" }} href="/contact-us/">Get Pet Quote</Link>
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@ export default function OurTeamPage() {
       <section className="section">
         <div className="container">
           <p className="eyebrow">Team</p>
-          <h1 className="sectionTitle">Our Shifting Experts</h1>
+          <h1 className="sectionTitle">Our Transport Experts</h1>
           <div className={styles.teamGrid} style={{ marginTop: 34 }}>
             {teamMembers.map((member) => (
               <article className={styles.teamCard} key={member.name}>

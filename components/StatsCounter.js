@@ -18,13 +18,19 @@ function Counter({ value, suffix }) {
   const inView = useInView(ref, { once: true, amount: 0.5 });
   const motionValue = useMotionValue(0);
   const spring = useSpring(motionValue, { duration: 1800, bounce: 0 });
-  const [display, setDisplay] = useState(0);
+  const [display, setDisplay] = useState("0");
+
+  const decimals = value % 1 !== 0 ? 1 : 0;
 
   useEffect(() => {
     if (inView) motionValue.set(value);
   }, [inView, motionValue, value]);
 
-  useEffect(() => spring.on("change", (latest) => setDisplay(Math.round(latest))), [spring]);
+  useEffect(() => {
+    return spring.on("change", (latest) => {
+      setDisplay(latest.toFixed(decimals));
+    });
+  }, [spring, decimals]);
 
   return <span ref={ref}>{display}{suffix}</span>;
 }

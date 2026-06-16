@@ -66,9 +66,9 @@ export default function QuoteForm({ compact = false, title = "Book Now!" }) {
         </label>
       ))}
       <button className="btn" type="submit" disabled={status === "loading"}>
-        {status === "loading" ? "Submitting..." : compact ? "Get Price Quote" : "Book Shifting Now"}
+        {status === "loading" ? "Submitting..." : compact ? "Get Price Quote" : "Book Transport Now"}
       </button>
-      {status === "success" ? <div className={styles.success}>Thank you. Our relocation team will contact you shortly.</div> : null}
+      {status === "success" ? <div className={styles.success}>Thank you. Our transport team will contact you shortly.</div> : null}
     </form>
   );
 }

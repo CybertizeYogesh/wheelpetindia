@@ -29,7 +29,7 @@ export default function ServiceDetailLayout({ service }) {
             </div>
             <div className={styles.sidebarBox}>
               <h3>How Can We Help</h3>
-              <p>Call our relocation team for packing, moving, vehicle transport, storage, or emergency shifting support.</p>
+              <p>Call our team for secure car courier service, auto transport, professional pet relocation, or priority transport support.</p>
               <a className="btn" href={`tel:${SITE.phoneCompact}`}><FaPhoneAlt /> Call Now</a>
             </div>
             <div className={styles.sidebarBox}>
@@ -49,8 +49,8 @@ export default function ServiceDetailLayout({ service }) {
                 <li key={benefit}><FaCheckCircle color="var(--color-primary)" /> {benefit}</li>
               ))}
             </ul>
-            <h3>Our Moving Process</h3>
-            <p>Every assignment follows a practical sequence so goods are packed, moved, and delivered without confusion.</p>
+            <h3>Our Shipping & Transport Process</h3>
+            <p>Every assignment follows a practical sequence so your vehicle or pet is safely secured, transported, and delivered without confusion.</p>
             <ul className={styles.checkGrid}>
               {service.process.map((step) => (
                 <li key={step}><FaCheckCircle color="var(--color-primary)" /> {step}</li>
@@ -70,7 +70,7 @@ export default function ServiceDetailLayout({ service }) {
           </div>
         </div>
       </section>
-      <CTASection title={`Need ${service.title}?`} text="Share your moving date and locations. Our team will help you plan a safe, quick, and cost-effective relocation." />
+      <CTASection title={`Need ${service.title}?`} text="Share your shipping date and locations. Our team will help you plan a safe, quick, and cost-effective transport." />
       <section className="section">
         <div className="container">
           <p className="eyebrow">Related Services</p>

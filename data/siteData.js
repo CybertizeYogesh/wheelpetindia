@@ -8,9 +8,9 @@ export const SITE = {
   hours: "08:00 AM - 09:00 PM",
   whatsappText: "I am looking for premium car and pet transport services.",
   addresses: [
-    "Palya Road, Madnayakanhalli, Bangalore - 562162",
-    "Shop No. 38, Muhana Mandi Gate No. 2, Jaipur, Rajasthan - 302029",
-    "138, Near Gaur Shabha Bhawan, Industrial Area, Rani Bazar Bikaner"
+    "Palya Road, Madnayakanhalli, Bangalore - 562162 (Corporate Office)",
+    "Yeshwanthpur Industrial Area, Bangalore - 560022 (Vehicle Transport Terminal)",
+    "Whitefield Main Road, Bangalore - 560066 (Pet Relocation & Transit Hub)"
   ]
 };
 
@@ -195,7 +195,7 @@ export const services = [
     intro: "Our professional pet transport services include customized pet cabs and travel boarding support to prepare your pet for transit.",
     detail: [
       "We make local vet visits and airport drop-offs simple with our air-conditioned pet cabs.",
-      "If there is a gap between your shifting dates, our animal travel agency coordinates safe boarding facilities.",
+      "If there is a gap between your travel dates, our animal travel agency coordinates safe boarding facilities.",
       "We ensure your pet is relaxed, fed, and properly exercised before any long-distance travel."
     ],
     benefits: [
@@ -285,7 +285,7 @@ export const blogPosts = [
   {
     slug: "tips-stress-free-dog-shipping",
     title: "Tips for Stress-Free Dog Shipping and Pet Relocation",
-    category: "Pet Shifting",
+    category: "Pet Relocation",
     date: "April 5, 2026",
     image: "/blog_pet.png",
     excerpt: "Discover key tips for professional pet transport, from crate training to keeping your pet calm during long-distance dog shipping.",
@@ -363,7 +363,7 @@ export const locations = cityNames.map((name) => {
     slug,
     originalSlug: `car-and-pet-transport-in-${slug}`,
     title: `Car and Pet Transport in ${name}`,
-    subtitle: `Vehicle & Pet Shifting in ${name}`,
+    subtitle: `Vehicle & Pet Transport in ${name}`,
     image: assets.box,
     nearby: nearby[slug] || `main residential, commercial, industrial, and nearby transport nodes around ${name}`,
     meta: `Get reliable car courier service and professional pet transport in ${name}. Wheelpet India operates premium auto transport and dog shipping.`
@@ -393,16 +393,16 @@ export const navLinks = [
 ];
 
 export const stats = [
-  { value: 99, suffix: "%", label: "Safe Car Deliveries" },
-  { value: 100, suffix: "%", label: "Happy Paws Moved" },
-  { value: 45, suffix: "+", label: "Supported Cities" },
-  { value: 98, suffix: "%", label: "On Time Handover" }
+  { value: 99.6, suffix: "%", label: "Safety Success Rate" },
+  { value: 4.9, suffix: "/5", label: "Average Customer Rating" },
+  { value: 40, suffix: "+", label: "Active Network Cities" },
+  { value: 100, suffix: "%", label: "GPS-Enabled Carriers" }
 ];
 
 export const processSteps = [
   {
     title: "Book & Consult",
-    text: "Share shifting dates and vehicle/pet details to get a customized relocation plan."
+    text: "Share shipping dates and vehicle/pet details to get a customized transport plan."
   },
   {
     title: "Crate & Wrap",

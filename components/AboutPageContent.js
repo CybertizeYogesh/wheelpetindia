@@ -17,13 +17,13 @@ export default function AboutPageContent() {
           <div className={styles.imageStack}>
             <Image src="/uploads/2025/11/image-65.webp" alt="Wheelpet India vehicle transport" width={650} height={820} />
             <Image src={assets.about} alt="Moving service worker" width={460} height={560} />
-            <div className={styles.factBadge}><span><strong>18</strong>Years of Experience</span></div>
+            <div className={styles.factBadge}><span><strong>10+</strong>Years of Experience</span></div>
           </div>
           <div className={styles.article}>
             <p className="eyebrow">About Us</p>
             <h2>Wheelpet India - Safe Journeys. Happy Paws.</h2>
             <p><strong>Wheelpet India</strong> is a well-known service provider in the car courier service and professional pet transport industry. We offer our customers hassle-free, quick, and high-quality vehicle and pet relocation services.</p>
-            <p>For the past 18 years, Wheelpet India has made a significant contribution to specialized vehicle and pet transport, making us one of the most trusted auto transport companies and animal travel agencies in the country.</p>
+            <p>For over a decade, Wheelpet India has made a significant contribution to specialized vehicle and pet transport, making us one of the most trusted auto transport companies and animal travel agencies in the country.</p>
             <p>We provide the best car delivery service and dog shipping options at competitive prices. Since we cherish our customers and their beloved pets, we guarantee our services until everyone arrives safely.</p>
             <ul className={styles.checkGrid}>
               {["Car courier service & auto transport", "Climate-controlled dog shipping cabs", "Experienced pet handlers & drivers", "Tracked intercity vehicle transport"].map((item) => (

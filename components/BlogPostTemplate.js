@@ -15,10 +15,10 @@ export default function BlogPostTemplate({ post }) {
           </div>
           {post.content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           <h3>Why Wheelpet India?</h3>
-          <p>The company combines organized packing, safe transport, trained workers, and customer-focused communication to make moving less stressful.</p>
+          <p>The company combines secure auto carriers, climate-controlled pet travel, trained handlers, and customer-focused communication to make transport secure and stress-free.</p>
         </article>
       </section>
-      <CTASection title="Plan Your Move Today" text="Our relocation team is ready to help with packing, moving, storage, and vehicle shifting." />
+      <CTASection title="Book Transport Today" text="Our team is ready to help with premium car courier services, auto transport, and professional pet relocation." />
     </>
   );
 }
